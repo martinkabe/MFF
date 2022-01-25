@@ -1,0 +1,17 @@
+Program (nepište program, jde mi jen o algoritmus a složitost!) na vstupu dostane
+
+čísla R a S = počet řádků a sloupců
+potom R*S čísel (jedniček nebo nul)
+potom číslo K = počet dotazů
+a nakonec K dotazů ve tvaru r1, r2, s1, s2
+a na každý z dotazů spočte a vytiskne odpověď udávající, kolik jedniček obsahuje podmatice s levým horním rohem (r1,s1) a pravým dolním rohem (r2,s2).
+
+Rozmyslete si a do odpovědi napište
+
+s jakou složitostí vzledem k R,S,K dokážete tuto úlohu řešit
+jakým algoritmem byste ji řešili (můžete popsat slovy nebo napsat (pseudo)kód).
+Na bodové hodnocení vašeho řešení bude mít vliv i efektivita algoritmu i přehlednost a srozumitelnost odpovědi.
+
+Odpověď nahrajte jako soubor (fotografie, dokument s obrázky...).
+
+https://www.techiedelight.com/calculate-sum-elements-sub-matrix-constant-time/

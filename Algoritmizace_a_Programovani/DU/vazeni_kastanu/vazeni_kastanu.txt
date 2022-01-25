@@ -1,0 +1,14 @@
+Máme pět kaštanů, z nichž žádné dva nejsou stejně těžké.
+
+Určete, kolik vážení na dvouramenných vahách (=kolik porovnání) potřebujeme k tomu, abychom určili ten kaštan, který je svou vahou prostřední, tedy dva kaštany jsou lehčí než on a dva jiné jsou těžší.
+
+Rozmyslete si vhodný způsob znázorňování/kreslení, a dbejte na srozumitelnost popisu algoritmu, obojí bude hrát roli při bodovém hodnocení odpovědi.
+
+Odpověď nahrajte jako soubor (fotografie, dokument s obrázky...).
+
+https://math.stackexchange.com/questions/1484891/5-balls-which-one-has-the-middle-weight
+https://www.geeksforgeeks.org/median-of-an-unsorted-array-in-liner-time-on/
+https://www.youtube.com/watch?v=1ddQbRzbNE0
+
+BEST SOLUTION:
+https://gateoverflow.in/48274/median-of-5-elements

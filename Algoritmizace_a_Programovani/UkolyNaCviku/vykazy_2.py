@@ -1,0 +1,47 @@
+def print_output(dict_groups, total_seconds):
+    for key, value in dict_groups.items():
+        print(f"{key}: {convert_hms(value)}")
+    print(f"celkem: {convert_hms(total_seconds)}")
+
+
+def convert_hms(seconds_total):
+    hours = seconds_total // (60*60)
+    seconds_total %= (60*60)
+    minutes = seconds_total // 60
+    seconds_total %= 60
+    return "%2i:%02i:%02i" % (hours, minutes, seconds_total)
+
+
+def calc_seconds(time_splitted_arr):
+    if len(time_splitted_arr) != 3:
+        return([])
+    return(int(time_splitted_arr[0])*3600 + int(time_splitted_arr[1])*60 + int(time_splitted_arr[2]))
+
+
+def calc_sum_activities():
+    total_seconds = 0
+    inpt = ''
+    month_dict = {}
+    while inpt != '.':
+        inpt = input()
+        inputs = inpt.split()
+        if len(inputs) == 0:
+            continue
+        if inputs[0] == inputs[(len(inputs)-2)] and len(inputs) > 1:
+            d, m, y = inputs[0].split('.')
+            key = f"{m}/{y}"
+            if key not in month_dict:
+                month_dict[key] = []
+            start_time_seconds = calc_seconds(inputs[1].split(':'))
+            end_time_seconds = calc_seconds(inputs[(len(inputs)-1)].split(':'))
+            total = end_time_seconds - start_time_seconds
+            total_seconds += total
+            if month_dict[key]:
+                month_dict[key] += total
+            else:
+                month_dict[key] = total
+    return(month_dict, total_seconds)
+
+
+if __name__=="__main__":
+    print_output(*calc_sum_activities())
