@@ -74,6 +74,6 @@ class QueensProblem:
 
 
 if __name__=="__main__":
-    queens = QueensProblem(6)
+    queens = QueensProblem(4)
     queens.solve_n_queens()
     
