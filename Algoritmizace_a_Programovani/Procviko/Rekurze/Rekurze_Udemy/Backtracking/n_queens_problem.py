@@ -4,6 +4,7 @@ class QueensProblem:
     def __init__(self, n):
         self.n = n
         self.chess_table = [[0 for i in range(n)] for j in range(n)]
+        self.backtrack = 0
 
 
     def solve_n_queens(self):
@@ -13,7 +14,8 @@ class QueensProblem:
         
         else:
             print("There is no solution to the problem.")
-    
+
+        print(f"{self.backtrack}x called backtracking.")
 
     # col_index is the same as the index of the queen
     def solve(self, col_index):
@@ -30,14 +32,14 @@ class QueensProblem:
                     return True
                 
                 # BACKTRACK
-                print("BACKTRACKING ...")
                 self.chess_table[row_index][col_index] = 0
+                self.backtrack += 1
         
         return False
 
     def is_place_valid(self, row_index, col_index):
         # queens can attack each other horizotally
-        for i in range(self.n):
+        for i in range(col_index, -1, -1):
             if self.chess_table[row_index][i] == 1:
                 return False
         
@@ -55,7 +57,7 @@ class QueensProblem:
         # from top right to bottom left
         j = col_index
         for i in range(row_index, self.n):
-            if i < 0:
+            if j < 0:
                 break
             if self.chess_table[i][j] == 1:
                 return False
@@ -64,6 +66,7 @@ class QueensProblem:
         return True
 
     def print_queens(self):
+        print('\n')
         for row in range(self.n):
             for col in range(self.n):
                 if self.chess_table[row][col] == 1:
@@ -74,6 +77,6 @@ class QueensProblem:
 
 
 if __name__=="__main__":
-    queens = QueensProblem(4)
+    queens = QueensProblem(8)
     queens.solve_n_queens()
     
