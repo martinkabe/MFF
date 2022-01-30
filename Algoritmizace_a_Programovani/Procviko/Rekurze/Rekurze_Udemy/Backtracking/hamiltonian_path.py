@@ -13,15 +13,15 @@ class HamiltonianPath:
             print("There is no solution to the problem.")
     
     # position is the index of vertex
-    def solve(self, position):
-        if self.n == position:
+    def solve(self, actual_position_index):
+        if self.n == actual_position_index:
             return True
         
         for vertex_index in range(self.n):
-            if self.is_feasible_solution(vertex_index, position):
+            if self.is_feasible_solution(vertex_index, actual_position_index):
                 self.path.append(vertex_index)
 
-                if self.solve(position+1):
+                if self.solve(actual_position_index+1):
                     return True
                 
                 #BACKTRACK
