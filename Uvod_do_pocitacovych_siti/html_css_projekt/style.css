@@ -1,0 +1,306 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Uzitecny styling  */
+.container {
+  padding: 0 5%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  color: rgb(46, 38, 24);
+}
+
+p#alert {
+  color: black;
+  font-weight: bold;
+  background: #FFFF66; /* yellow */
+  border: 2px solid black;
+  padding: 1em;
+}
+
+.ul-main {
+  padding-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.h-special {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+table{
+  border-collapse: collapse;
+  width: 35%;
+  height: 180px;
+}
+th{
+  background-color: #ccb9b9;
+  border: 2px solid #000;
+  height: 60px;
+}
+td,tr{
+  background-color: #d9d9d9;
+  border: 2px solid #000;
+}
+
+/* Main Level */
+ul{
+  margin-left:10px;
+}
+
+/* Second Level */
+ul ul{
+  margin-left:15px;
+}
+
+/* Third Level */
+ul ul ul{
+  margin-left:20px;
+}
+
+.mb {
+  margin-bottom: 6rem;
+}
+
+.mb > img:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 10px solid red;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.heading-primary {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: rgb(62, 35, 80);
+  margin-bottom: 1rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  color: rgb(62, 35, 80);
+  margin-bottom: 1.5rem;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  color: rgb(62, 35, 80);
+  margin-bottom: .5rem;
+}
+
+.article-style {
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(169, 163, 192);
+}
+
+.article-style > h1, .single-article {
+  margin: 10px;
+  padding: 5px;
+}
+
+.single-article {
+  background: white;
+}
+
+.single-article > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+blockquote {
+  margin-top: 1.12em;
+  margin-right: 40px;
+  margin-bottom: 1.12em;
+  margin-left: 40px;
+  font-style: italic;
+}
+
+/* Hlavicka  */
+header {
+  height: 10vh;
+  display: flex;
+}
+
+.main-nav {
+  width: 70%;
+  background-color: rgb(62, 35, 80);
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav ul,
+.sub-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 20px
+}
+
+.main-nav ul li a:hover {
+  text-transform: uppercase;
+  padding-right: 0rem;
+  background: orange;
+  color: white;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.sub-nav {
+  width: 30%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sub-nav ul li a {
+  color: rgb(62, 35, 80);
+  padding-left: 1.5rem;
+}
+
+/* Hlavni stranka  */
+.hero {
+  height: calc(100vh - 10vh);
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+.hero-img {
+  flex: 0 0 50%;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(62, 35, 80);
+  padding: 0.5rem 1.5rem;
+  margin-top: 4rem;
+}
+
+/* Sluzby  */
+.description {
+  height: 30vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card .icon img {
+  width: 7rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+/* Projekty  */
+.work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Kontaktni formular  */
+.contact-form form {
+  width: 80%;
+}
+
+.contact-form .row {
+  width: 100%;
+  display: flex;
+}
+
+.input50 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.input100 {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgb(46, 38, 24);
+  padding: 10px;
+  outline: none;
+  margin: 10px 0;
+}
+
+.contact-form .row textarea {
+  height: 150px;
+}
+
+.contact-form .row input[type="submit"] {
+  background-color: rgb(62, 35, 80);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
