@@ -1,8 +1,9 @@
 def sum_ints(n, sum=0):
     if n == 0:
-        return sum
+        return n
     
-    return sum_ints(n-1, sum + n)
-    
-result = sum_ints(10)
+    sum = n + sum_ints(n - 1)
+    return sum
+
+result = sum_ints(5)
 print(result)

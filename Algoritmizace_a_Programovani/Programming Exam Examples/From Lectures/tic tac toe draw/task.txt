@@ -1,0 +1,17 @@
+There is a line with two numbers R and S on the input.
+
+Fill the board with R rows and S columns with crosses (X) and circles (O) so that there are no 5 identical symbols in a row in any row, column or diagonal.
+
+We reveal that for the sizes at which we test the task, random filling of the board has the required property with non-trivial probability.
+
+Example: For input
+
+5 6
+
+is one of correct outputs
+
+OXXXXO
+OOXOOX
+XXOOXX
+XOOXXX
+XXOXXO

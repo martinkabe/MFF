@@ -1,0 +1,10 @@
+1. Exam takes 60 minutes
+2. One task is given by coding environment (school system -> similar to leetcode.com) to the student
+3. Solve the task in Python
+4. All the code has to be in one .py file
+5. You cannot use modules such as numpy, datetime, itertools
+6. Complete solution is then pushed into the coding system mentioned in #2
+7. There are 6-10 unit tests in coding system and your program must pass all of them !!! These are unit tests and these are generated automatically by the coding system for code correctness and validation purposes.
+
+Used literature in our course:
+http://broiler.astrometry.net/~kilian/The_Art_of_Computer_Programming%20-%20Vol%201.pdf

@@ -1,0 +1,14 @@
+Robot stands in the origin of a Euclidean space (coordinates [0,0,0]) and is rotated so that the x-axis is oriented to the right, the y-axis upwards, and the z-axis in the viewing direction (forward).
+
+Commands (letters) for the robot are the following:
+
+F ... forward, moves a step of length 1 in the direction of its rotation orientation (rotation always in place by 90 degrees)
+L ... left
+R ... right
+U ... up
+D ... down
+< ... on the left side
+> ... on the right side
+
+The program reads characters from the input representing commands and after each of them prints three integers, separated by a space, on the separate line, indicating the current position of the robot.
+The entry is terminated by a dot ('.').

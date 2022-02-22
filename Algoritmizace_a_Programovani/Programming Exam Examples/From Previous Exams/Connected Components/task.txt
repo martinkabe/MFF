@@ -1,0 +1,21 @@
+An undirected unweighted graph with N vertices and M edges is entered on the standard program input. The vertices are marked with numbers from 1 to N. The number N will be entered on the first line of the input, where N <= 100, the number M will be entered on the second line of the input. This is followed by M lines, each of which describes one edge of the graph. The edge is always specified by a pair of mutually different vertex numbers, which are connected by this edge.
+
+Write a program that determines connected components of a given graph. On standard output, write a list of vertex numbers that form one connected component on each line. Separate numbers on a line with spaces. Thus, each of the numbers from 1 to N appears on the output just once (each vertex belongs to exactly one connected component). The order of the connected components can be arbitrary, the order of the numbers of the vertices forming one connected component as well.
+
+Example of the input:
+10
+7
+1 2
+5 9
+4 6
+1 8
+8 2
+7 6
+2 10
+
+One of possible  output:
+1 2 8 10
+3
+7 4 6
+5 9
+
